@@ -1,3 +1,4 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/4kc6rksrubyaa5lx?svg=true)](https://ci.appveyor.com/project/AndreyKorolevich/rxjs-front-third-ajsb)
 ## Project Management Dashboard
 
 ### Легенда

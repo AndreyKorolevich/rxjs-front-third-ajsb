@@ -20,7 +20,6 @@ export default class Widget {
       this.showWidget();
 
       console.log(value.projects);
-
       this.state = value.projects;
       this.addStats(value.projects);
       value.projects.forEach((elem) => {
@@ -51,6 +50,7 @@ export default class Widget {
     this.container.appendChild(widget);
   }
 
+  /* eslint-disable */
   addStats(stats) {
     const list = document.createElement('div');
     list.classList.add('stats-list');
@@ -75,6 +75,7 @@ export default class Widget {
     const name = document.createElement('div');
     name.classList.add('name');
     name.textContent = `Project: ${project.name}`;
+    name.dataset.id = project.id;
     tasks.appendChild(name);
 
     project.tasks.forEach((e) => {
@@ -99,7 +100,8 @@ export default class Widget {
     fromEvent(document.querySelector('.widget'), 'click')
       .subscribe((event) => {
         if (event.target.classList.contains('done')) {
-          this.store.check(event.target.id);
+          const idProject = event.target.closest('.task').parentElement.firstElementChild.dataset.id;
+          this.store.check([idProject, event.target.id]);
         } else if (event.target.classList.contains('project-name')) {
           this.store.choose(event.target.id);
         }

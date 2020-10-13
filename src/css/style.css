@@ -54,6 +54,7 @@
 }
 
 .list-projects{
+  width: 200px;
   padding: 10px;
   position: absolute;
   top: 10px;
@@ -68,6 +69,7 @@
 }
 
 .second {
+  width: 145px;
   float: right;
 }
 
