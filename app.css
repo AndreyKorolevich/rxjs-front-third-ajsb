@@ -1,0 +1,80 @@
+.widget{
+  width: 800px;
+  height: 600px;
+  overflow: auto;
+  border: 2px solid;
+  border-radius: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.stats, .tasks {
+  width: 45%;
+}
+
+.container{
+  border: 1px solid;
+  position: relative;
+}
+
+.header, .name {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+  box-sizing: border-box;
+}
+
+.project, .task{
+  border: 1px solid;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-tasks {
+  width: 30px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.name, .done, .project-name{
+  cursor: pointer;
+}
+
+.list-projects{
+  width: 200px;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.first {
+  display: flex;
+}
+
+.second {
+  width: 145px;
+  float: right;
+}
+
+.choose{
+  color: goldenrod;
+}
+
+
